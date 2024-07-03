@@ -1,0 +1,202 @@
+/* custom.css */
+.outer-container {
+    width: 785px;
+    height: 618px;
+    margin: 0 auto;
+}
+
+.card-custom {
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+}
+
+.successful-completion {
+    width: 240px;
+    height: 496px;
+}
+
+.progression, .sales {
+    width: 240px;
+    height: 240px;
+}
+
+.remaining {
+    width: 508px;
+    height: 102px;
+}
+
+.success-transaction, .pending-transaction {
+    width: 432px;
+    height: 90px;
+}
+
+.progress-circle {
+    width: 100px;
+    height: 100px;
+    background: conic-gradient(#4e73df 0% 77.5%, #eaeaea 77.5% 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    position: relative;
+}
+
+.progress-circle::before {
+    content: '';
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.progress-text {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.legend {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.legend li {
+    display: flex;
+    align-items: center;
+}
+
+.legend span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.legend .blue { background: #4e73df; }
+.legend .orange { background: #f6c23e; }
+.legend .yellow { background: #f4e04d; }
+.legend .red { background: #e74a3b; }
+
+.card-title {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.card-value {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.chart-line {
+    height: 50px;
+}
+
+.chart-legend {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.chart-legend div {
+    width: 150px;
+    height: 5px;
+    border-radius: 100px;
+    margin-right: 5px;
+}
+
+.blue-line { background-color: blue; }
+.orange-line { background-color: orange; }
+
+.chart-bar {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.bar {
+    width: 10px;
+    border-radius: 5px;
+}
+
+.bar-red { height: 40px; background-color: red; }
+.bar-blue-dark { height: 80px; background-color: darkblue; }
+.bar-blue-light { height: 60px; background-color: lightblue; }
+.bar-yellow { height: 100px; background-color: yellow; }
+.bar-orange { height: 90px; background-color: orange; }
+
+.custom-card4, .custom-card5, .custom-card6 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.card-section {
+    flex: 1;
+    text-align: center;
+}
+
+.card-section:not(:last-child) {
+    border-right: 1px solid #e0e0e0;
+}
+
+.small {
+    font-size: 12px;
+    color: #6c757d;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.text-success {
+    color: #28a745;
+}
+
+.profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.transaction-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    height: 30px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.status.pending {
+    background-color: #f0f0f5;
+    color: #6c757d;
+}
+
+.status.success {
+    background-color: #e6f9ed;
+    color: #28a745;
+}
